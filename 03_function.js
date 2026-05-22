@@ -17,3 +17,10 @@ console.log(c);
 function myFun2(a) {
     return a * 2;
 }
+console.log(myFun2(100));
+
+function myFun3() {
+    if (Math.random() > 0.5) {return [1, 2, 3];}
+    return {a:1, b:2, c:3};
+}
+console.log(myFun3());
