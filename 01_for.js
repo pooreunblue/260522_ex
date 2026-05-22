@@ -26,3 +26,39 @@ for (let i=0; i < arr.length; i++) {
         break;
     }
 }
+
+// 역방향
+console.log("[역방향]")
+for (let i = arr.length-1; i >= 0; i--) {
+    console.log(arr[i]);
+}
+
+// while문으로 구현한다면
+let w2 = arr.length - 1;
+while (w2 >= 0) {
+    console.log(arr[w2]);
+    w2--;
+}
+
+// 무한반복
+// for (;;) {
+//     console.log("크크크큭")
+// }
+
+for (let i = 0; i < 3; i++){
+    for (let j = 0; j < 3; j++){
+        console.log(`i ${i} j ${j}`)
+    }
+}
+
+const matrix = [
+    [1,"윌","바나나"],
+    [2,"김","김"],
+    [3,"자바","커피"],
+];
+for (let i = 0; i < matrix.length; i++) {
+    console.log(matrix[i]);
+    for (let j = 0; j < matrix[0].length; j++) {
+        console.log(matrix[i][j]);
+    }
+}
